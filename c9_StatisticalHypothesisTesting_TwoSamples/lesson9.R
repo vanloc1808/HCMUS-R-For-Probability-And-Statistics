@@ -93,3 +93,9 @@ test.geq.oneside <- function(x, y, mu0, alpha) {
 }
 test.geq.oneside(Before, After, 0, 0.05)
 t.test(Before, After, alternative = "greater", var.equal = v.equal, conf.level = TRUE, paired = TRUE)
+
+#3. So sanh 2 ti le
+#Bai tap 7
+y <- c(15, 8)
+n <- c(300, 300)
+prop.test(y, n, alternative = "two.sided",conf.level = 0.975)
